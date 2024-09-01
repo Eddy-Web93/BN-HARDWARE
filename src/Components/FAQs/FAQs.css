@@ -1,0 +1,110 @@
+.faqs{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+.faqs-title{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+.faqs-title h1{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 1000;
+}
+.faqs-container{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.question{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.question h1{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 1000;
+    margin-bottom: 0;
+    color: var(--bg-);
+    background: var(--p-);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.question p{
+    width: 100%;
+    height: 0;
+    font-size: 16px;
+    font-weight: 1000;
+    text-align: center;
+    color: var(--bg-);
+    background: var(--a-);
+    padding: 0;
+    overflow: hidden;
+    transition: all .2s;
+}
+.question p.activated{
+    height: fit-content;
+    padding: 10px;
+}
+.faqs-img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--bg-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.arrow-img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+}
+.arrow-img.shif{
+    transform: rotateZ(-90deg);
+}
+@media (max-width : 900px) {
+    .question{
+        width: 100%;
+    }
+    .question h1{
+        font-size: 15px;
+        padding: 20px;
+        padding-right: 40px;
+    }
+    .question p{
+        font-size: 12px;
+    }
+    .faqs-img{
+        top: 5px;
+        right: 5px;
+        width: 35px;
+        height: 35px;
+    }
+    .arrow-img{
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+    }
+    .arrow-img.shif{
+        transform: rotateZ(-90deg);
+    }
+}

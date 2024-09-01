@@ -1,0 +1,29 @@
+:root{
+  --p- : #EFD9CC;
+  --bg- : #06413D;
+  --cbg- : #009286;
+  --s- : #6e5241;
+  --a- : #f5c3a6;
+  --tp-bg- : #06413d88;
+  --w- : #f79a65;
+  --tpp- : #005c567a;
+  --lg- : linear-gradient(to bottom,  var(--tpp-) , transparent)
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: var(--p-);
+  font-family: "actor";
+}
+body{
+  background: var(--bg-);
+  position: relative;
+  height: 100vh;
+}
+.app{
+  position: relative;
+}

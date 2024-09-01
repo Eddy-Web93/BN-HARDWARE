@@ -1,0 +1,128 @@
+.services{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+.serv-head{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.serv-head h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 1000;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transition: all .3s;
+}
+.serv-head h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--p-);
+    border-radius: 0;
+}
+.serv-container{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+.serv-card{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+.serv-card:nth-child(2),
+.serv-card:nth-child(4){
+    flex-direction: row-reverse;
+}
+.serv-left{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+.serv-img{
+    width: 100%;
+    height: 100%;
+}
+.serv-right{
+    width: 50%;
+    padding: 20px;
+    height: 100% !important;
+}
+.serv-right h1 {
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.serv-right p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.serv-right button{
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--p-);
+    position: relative;
+    font-size: 15px;
+    font-weight: 1000;
+}
+.serv-right button:after{
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--p-);
+    transition: all .2s;
+    z-index: -1;
+}
+.serv-right button:hover::after{
+    width: 100%;
+}
+.serv-right button:hover{
+    color: var(--bg-);
+}
+@media (max-width: 900px) {
+    .serv-card{
+        height: fit-content;
+        gap: 0;
+        flex-direction: column;
+    }
+    .serv-left{
+        width: 100%;
+    }
+    .serv-right{
+        width: 100%;
+        padding: 10px;
+    }
+    .serv-card:nth-child(2),
+    .serv-card:nth-child(4){
+        flex-direction: column;
+    }
+    .serv-right h1 {
+        font-size: 18px;
+    }
+    .serv-right p {
+        font-size: 13px;
+    }
+}

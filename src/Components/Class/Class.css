@@ -1,0 +1,137 @@
+.class{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.class-right{
+    width: 50%;
+    height: 100% !important;
+    padding: 10px;
+    position: relative;
+}
+.class-img{
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+.img-bg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 97%;
+    height: 75%;
+    background: var(--lg-);
+    backdrop-filter: blur(5px);
+    transition: all .2s;
+}
+.img-bg:hover{
+    backdrop-filter: blur(1px);
+}
+.class-left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.class-left h4{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.class-left p{
+    font-size: 30px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.gala{
+    width: 100%;
+    height: fit-content;
+    position: relative !important;
+}
+.gala-img{
+    width: 100%;
+    height: 100%;
+}
+.gala-bg{
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--lg-);
+    backdrop-filter: blur(3px);
+    transition: all .2s;
+}
+.class-container{
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+}
+.gala-bg:hover{
+    backdrop-filter: blur(1px);
+}
+@media (max-width: 900px) {
+    .class{
+        height: 75vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .class-right{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 0;
+    }
+    .class-img{
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+    .img-bg{
+        height: 150px;
+    }
+    .class-left{
+        width: 100%;
+        height: 100%;
+    }
+    .class-left h4{
+        font-size: 15px;
+    }
+    .class-left p{
+        font-size: 23px;
+    }
+    .gala{
+        width: 100%;
+        height: fit-content;
+        position: relative !important;
+    }
+    .gala-img{
+        width: 100%;
+        height: 100%;
+    }
+    .gala-bg{
+        width: 100%;
+        height: 100%;
+        background: var(--lg-);
+        backdrop-filter: blur(3px);
+        transition: all .2s;
+    }
+    .class-container{
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+    }
+    .gala-bg:hover{
+        backdrop-filter: blur(1px);
+    }
+    
+}
